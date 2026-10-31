@@ -1,101 +1,106 @@
 # AI-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers (NER)
 
-AI-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers in North Eastern Region (NER).
+[![Live Web Application](https://img.shields.io/badge/Live%20Website-GitHub%20Pages-0ea5e9?style=for-the-badge&logo=github)](https://rajeshwarij2005.github.io/ai-assisted-oa-risk-detection-ner/)
+[![Streamlit App](https://img.shields.io/badge/Streamlit%20Cloud-Ready%20to%20Deploy-FF4B4B?style=for-the-badge&logo=streamlit)](https://share.streamlit.io/deploy?repository=RajeshwariJ2005/ai-assisted-oa-risk-detection-ner&branch=main&mainModule=app.py)
+[![Python Version](https://img.shields.io/badge/Python-3.10%20%7C%203.11-3776AB?style=for-the-badge&logo=python)](https://github.com/RajeshwariJ2005/ai-assisted-oa-risk-detection-ner)
 
-## Project Overview
+> **Live Public URL**: [https://rajeshwarij2005.github.io/ai-assisted-oa-risk-detection-ner/](https://rajeshwarij2005.github.io/ai-assisted-oa-risk-detection-ner/)
 
-OA Early Detection System is an academic prototype designed to screen and analyze the risk of Osteoarthritis (OA) using patient information, questionnaire responses, and gait parameters.
+---
 
-## Main Features
+## 🌐 Live Website & Online Access
 
-* **Patient Registration**: Capture patient demographics and clinical baseline.
-* **OA Questionnaire**: Interactive questionnaire to record symptomatic pain and joint stiffness.
-* **Gait Assessment**: Record and evaluate gait metrics.
-* **OA Risk Assessment**: Compute risk scores and risk categories based on multi-parameter analysis.
-* **Patient Report & Search**: Query patient history, inspect risk breakdowns, and delete entries.
-* **CSV Report Download**: Export patient screening reports directly to CSV.
-* **Dashboard & Charts**: Visual data summaries and gait analysis metrics.
+Anyone can access and use this AI system online directly in any browser:
+* **Interactive Live Web App**: [https://rajeshwarij2005.github.io/ai-assisted-oa-risk-detection-ner/](https://rajeshwarij2005.github.io/ai-assisted-oa-risk-detection-ner/)
+* **Streamlit Community Cloud 1-Click Deploy**: [Launch on Streamlit Cloud](https://share.streamlit.io/deploy?repository=RajeshwariJ2005/ai-assisted-oa-risk-detection-ner&branch=main&mainModule=app.py)
 
-## Technologies Used
+---
 
-* Python 3
-* Streamlit
-* Pandas
-* SQLite
-* HTML / CSS
-* Browser Speech Synthesis
+## 🩺 Project Overview
 
-## Gait Parameters
+The **AI-Assisted Early Detection System for Osteoarthritis (OA) Risk Markers** is designed for the North Eastern Region (NER) to screen, analyze, and detect early biomarkers of knee osteoarthritis. The system combines demographic vitals, clinical symptom questionnaires, biomechanical gait metrics, and radiographic Kellgren-Lawrence (KL) grading to stratify patient risk before irreversible joint degeneration occurs.
 
-The system analyzes:
-* Walking Speed
-* Stride Length
-* Cadence
-* Step Count
-* Gait Variability
+---
 
-## Risk Assessment
+## ✨ Key System Features
 
-The prototype considers:
-* Age
-* BMI
-* Pain Level
-* Questionnaire Score
-* Gait Score
+1. **Clinical Screening & Risk Engine**:
+   - Multi-marker patient registration (Age, Gender, Height, Weight, automated BMI calculation).
+   - Standardized 5-question clinical OA symptom questionnaire with pain scale (VAS 0–10).
+   - Biomechanical Gait Analysis computing walking speed, stride length, cadence, step count, and gait variability coefficient.
+   - Real-time AI risk stratification engine (Low Risk, Moderate Risk, High Risk) with marker weight breakdown and clinical advisory.
 
-## Getting Started
+2. **Knee Radiographic AI Vision Screener**:
+   - Radiograph upload support (AP knee view) with sample test presets.
+   - Deep-learning inspired evaluation of Joint Space Width (JSW), marginal osteophytes, and subchondral sclerosis.
+   - Standardized Kellgren-Lawrence (KL Grade 0 to Grade 4) grading with confidence scores.
 
-### Prerequisites
+3. **Multi-lingual Voice Guidance (Web Speech Synthesis)**:
+   - Voice assistant guiding users through the screening workflow in **English**, **Tamil (தமிழ்)**, and **Hindi (हिन्दी)**.
 
-Ensure you have Python 3.10+ installed.
+4. **NER Population Analytics Dashboard**:
+   - Visual charts powered by Chart.js showing risk distribution and state-level screening volumes across Assam, Meghalaya, Sikkim, Manipur, Mizoram, Nagaland, Tripura, and Arunachal Pradesh.
 
-### Installation
+5. **Patient Database & CSV Report Generator**:
+   - Searchable, filterable patient records with instant CSV clinical report export.
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/RajeshwariJ2005/ai-assisted-oa-risk-detection-ner.git
-   cd ai-assisted-oa-risk-detection-ner
-   ```
+---
 
-2. Install the required dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🏃 Quick Start / Local Development
 
-3. Launch the Streamlit application:
-   ```bash
-   streamlit run app.py
-   ```
+### 1. Run the Web Application
+Open [`index.html`](file:///C:/Users/Admin/.gemini/antigravity/scratch/ai-assisted-oa-risk-detection-ner/index.html) directly in any modern browser, or run a local HTTP server:
+```bash
+python -m http.server 8000
+```
+Then visit `http://localhost:8000`.
 
-## Important Note
+### 2. Run the Streamlit Application
+```bash
+# Clone the repository
+git clone https://github.com/RajeshwariJ2005/ai-assisted-oa-risk-detection-ner.git
+cd ai-assisted-oa-risk-detection-ner
 
-This is an academic and screening demonstration prototype. The calculated risk score and gait classification are intended for early screening support and educational purposes; they do not constitute a definitive medical diagnosis and should not replace clinical evaluation by a certified healthcare professional.
+# Install dependencies
+pip install -r requirements.txt
 
-## Project Structure
+# Run the Streamlit app
+streamlit run app.py
+```
+
+---
+
+## 📂 Repository Structure
 
 ```text
-├── app.py
-├── index.html
-├── requirements.txt
-├── .gitignore
-├── .devcontainer/
+├── index.html                  # Live Single-Page Web Application (GitHub Pages)
+├── app.py                      # Multi-page Streamlit Application
+├── requirements.txt            # Python dependencies (streamlit, pandas)
+├── .gitignore                  # Git ignore rules
+├── .devcontainer/              # VS Code Dev Container configuration
 │   └── devcontainer.json
-├── .vscode/
+├── .vscode/                    # VS Code editor settings
 │   └── settings.json
 ├── data/
-│   ├── README.md
-│   ├── app_backup.py
-│   ├── requirements.txt
-│   └── sample_data.csv
+│   ├── README.md               # Project documentation
+│   ├── app_backup.py           # Backup archive
+│   ├── requirements.txt        # Supplementary requirements
+│   └── sample_data.csv         # Sample patient data
 ├── model/
 │   ├── __init__.py
-│   ├── risk_engine.py
+│   ├── risk_engine.py          # AI Risk calculation engine
 │   └── data/
 │       └── utils/
 │           ├── __init__.py
 │           ├── calculations.py
-│           └── database.py
+│           └── database.py     # SQLite persistence
 └── utils/
     ├── __init__.py
-    └── calculations.py
+    └── calculations.py         # Biomechanical gait analysis algorithms
 ```
+
+---
+
+## ⚠️ Important Note
+
+This system is an academic research and early screening prototype for educational and preventive support. Calculated risk scores and gait classifications do not replace clinical diagnosis by a certified orthopedic specialist or radiologist.
